@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #F9F9F9;
+  color: #000;
+  height: 100%;
+}
+
+header {
+  background-color: #E30613;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+  padding: 10px 35px;
+  gap: 6%;
+}
+
+header .logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+form.search-form {
+  flex-grow: 1;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  
+}
+
+form.search-form input[type="search"] {
+  flex-grow: 1;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 15px 20px;
+  border-radius: 9999px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #E30613;
+  background-color: #F9F9F9;
+  outline-offset: 2px;
+  outline-color: transparent;
+  
+  
+}
+
+form.search-form input[type="search"]::placeholder {
+  color: #E30613;
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+
+form.search-form input[type="search"]:focus {
+  outline-color: #E30613;
+}
+
+form.search-form button {
+  padding: 12px 17px;
+  border-radius: 9999px;
+  border: 3px solid #F9F9F9;
+  background-color: transparent;
+  color: #F9F9F9;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form.search-form button:hover,
+form.search-form button:focus {
+  background-color: #F9F9F9;
+  color: #E30613;
+  outline: none;
+}
+
+
+
+.dropdown {
+  position: relative;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #E30613; /* amarelo faísca */
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 17px 16px;
+  color: #F9F9F9;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  white-space: nowrap;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #FFE066;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav.menu {
+  display: flex;
+  gap: 39px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #F9F9F9;
+  ;
+}
+
+nav.menu a {
+  color: #F9F9F9;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav.menu a:hover,
+nav.menu a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #F9F9F9;
+  font-weight: bold;
+  font-size: 15px;
+  user-select: none;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.cart i {
+  font-size: 25px;
+ 
+  
+}
+
+.cart span:hover {  
+  text-decoration: underline;
+}
+
+
+/* Banner */
+section.banner {
+  background-color: #EFCB1B;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 100px 64px;
+}
+
+section.banner img {
+  width: 400px;
+  height: 250px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+section.banner .info-box {
+  background-color: #F9F9F9;
+  border-radius: 24px;
+  padding: 40px 64px;
+  max-width: 400px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+section.banner .info-box p.title {
+  color: #E30613;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0 0 12px 0;
+}
+
+section.banner .info-box p.subtitle {
+  color: #E30613;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0 0 24px 0;
+}
+
+section.banner .info-box button {
+  border: 2px solid #E30613;
+  background-color: transparent;
+  color: #E30613;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 14px 40px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section.banner .info-box button:hover,
+section.banner .info-box button:focus {
+  background-color: #E30613;
+  color: #F9F9F9;
+  outline: none;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 4%;
+}
+
+.arrow {
+  font-size: 70px;
+  color: red;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+  gap: 20px;
+  padding: 20px;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 65%;
+  max-width: 1590px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 100px;
+}
+
+.circle-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid red;
+  overflow: hidden;
+  flex-shrink: 0;
+
+}
+
+.circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circle-image img:hover {
+  transform: scale(1.2);
+  transition: transform 0.7s ease;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
